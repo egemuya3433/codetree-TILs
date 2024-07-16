@@ -24,10 +24,11 @@ int main() {
         temp++;
     }
     int row = 0;
+    int row2 = 0;
     int col = 0;
     int max = 0;
-    while(col + 3 <= n){
-        while(row + 3 <= n){
+    while(col + 2 < n){
+        while(row + 2 < n){
             int num = 0;
             for(int i = 0; i < 3; i++){
                 for(int j = 0; j < 3; j++){
@@ -39,6 +40,7 @@ int main() {
             }
             row++;
         }
+        row = row2;
         col++;
     }
 
