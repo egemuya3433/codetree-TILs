@@ -27,8 +27,8 @@ int main() {
     int col = 0;
     int max = 0;
     while(col + 3 <= n){
-        int num = 0;
         while(row + 3 <= n){
+            int num = 0;
             for(int i = 0; i < 3; i++){
                 for(int j = 0; j < 3; j++){
                     num += map[col + i][row + j];
